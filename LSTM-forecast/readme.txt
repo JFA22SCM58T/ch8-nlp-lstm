@@ -1,16 +1,5 @@
 
-Step1: What will LSTM do?
-      1. LSTM will accept the GitHub data from flask microservice and will forecast the data for past 1 year based on past 30 days
-      2. It will also plot three different graph (i.e.  "model_loss", "lstm_generated_data", "all_issues_data")using matplot lib 
-      3. This graph will be stored as image in gcloud storage.
-      4. The image URL are then returned back to flask microservice.
-
-Step2: What is Google Cloud Storage?
-       Google Cloud Storage is a RESTful online file storage web service for storing and accessing data on Google Cloud
-       Platform infrastructure.    
-
-
-Step3: Deploying LSTM to gcloud platform
+Step1: Deploying LSTM to gcloud platform
        1: You must have Docker(https://www.docker.com/get-started) and Google Cloud SDK(https://cloud.google.com/sdk/docs/install) 
            installed on your computer.  
        2. Steps to follow while creating LSTM gcloud project:
@@ -74,7 +63,7 @@ Step3: Deploying LSTM to gcloud platform
        12. Copy the generated LSTM gcloud url and paste it in sticky notes for further use
 
      
-Step4: To run locally:
+Step2: To run locally:
        1. Go to cmd terminal and type following:
         a. python -m venv env
         b. env\Scripts\activate.bat

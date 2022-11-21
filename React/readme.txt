@@ -1,19 +1,4 @@
-Problem Statement:
-The goal of this tutorial is to use GitHub to track created and closed issues of a given repository(angular, material-design, angular-cli,D3)
-for the past year along with timeseries forecasting using Tensorflow/LSTM Keras and we will then see how to deploy it to gcloud platform.
-
-Solution:
-Step 1: We are creating three microservices:
-        1. React 
-        2. Flask
-        3. LSTM/Keras
-
-Step 2: What will React do?
-        1. React will retrieve GitHub created and closed issues for a given repository and will display the bar-charts of same using high-charts        
-        2. It will also display the images of the forecasted data for the given GitHub repository and images are being retrieved from GCP storage
-        3. React will make a fetch api call to flask microservice.
-
-Step 3: Prerequisites to work with this application:
+step1:
         1:You must have following installed on your computer:
            a.Docker(https://www.docker.com/get-started) 
            b.Google Cloud SDK(https://cloud.google.com/sdk/docs/install) 
